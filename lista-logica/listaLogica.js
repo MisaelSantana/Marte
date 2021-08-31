@@ -57,15 +57,6 @@ funcao(10, 10, 30)
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 // 50
 
-// Crie uma função chamada `divisao` que receba como parâmetro dois números, e retorne o resultado da divisão entre eles.
-function divisao(x, y) {
-	return 'valor da divisao é ' + x / y;
-}
-
-// Invoque a função criada acima, passando os parâmetros 10 e 2.
-divisao(10 , 2)
-return 'valor da divisao' + divisao;
-
 /*
 Crie uma função com as seguintes características:
 1. A função deve receber 3 argumentos.
@@ -90,27 +81,6 @@ function calcular(a, b ,c) {
 	}
 	else {
 		return null;
-	}
-}
-
-/* Crie uma função que valide se o número informado é par ou ímpar, além disso precisa validar se o 
-número informado é do tipo `number`, para satisfazer as condições:
- - Validar se foi inserida um dado
- - Validar se foi inserido um número
- - Validar se o número é ímpar ou par
- - Exiba as mensagens para cada caso informado acima.*/
-function verificar(par, impar) {
-	if(par===undefined && impar===undefined) {
-		return typeof value === "number" && 'valor inserido é numeral'
-	}
-	else if(par % 2 == 0) {
-		return 'o valor inserido é par, pois o resto da divisão é = a 0'
-	}
-	else if(impar % 2 == 0) {
-		return 'o valor inserido é impor, pois o resto da divisão é diferente de 0'
-	}
-	else {
-		return false
 	}
 }
 

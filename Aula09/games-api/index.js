@@ -1,9 +1,11 @@
 const { response, request } = require('express');
 const express = require('express');
 const app = express();
+const cors = require('cors')
 
 app.use(express.urlencoded({extended: false }));
 app.use(express.json());
+app.use(cors());
 
 const DB = {
     games: [
@@ -64,7 +66,7 @@ app.post('/api/game/', (request, response) => {
         name,
         year,
         price,
-    });
+    }); 
     response.send({message: 'Uhuuul, criado com sucesso!'});
 });
 
